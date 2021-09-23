@@ -3,9 +3,8 @@ D365KB.Logger = D365KB.Logger || { __namespace: true };
 
 D365KB.Constants = D365KB.Constants || { __namespace: true };
 
-D365KB.DynamicsForm = D365KB.DynamicsForm || { __namespace: true };
+D365KB.Account = D365KB.Account || { __namespace: true };
 D365KB.Helper = D365KB.Helper || { __namespace: true };
-
 
 
 (function ()
@@ -34,7 +33,7 @@ D365KB.Helper = D365KB.Helper || { __namespace: true };
 (function ()
 {
     this.Entity = {
-        LogicalName: "Piyush",
+        AccountLogicalName: "account",
     };
 
 }).call(D365KB.Constants);
@@ -46,7 +45,7 @@ D365KB.Helper = D365KB.Helper || { __namespace: true };
     {
         D365KB.Logger.Log("Piyush");
     };
-}).call(D365KB.DynamicsForm);
+}).call(D365KB.Account);
 
 
-document.onload = D365KB.DynamicsForm.OnLoad;
+document.onload = D365KB.Account.OnLoad;

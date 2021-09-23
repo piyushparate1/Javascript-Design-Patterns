@@ -9,15 +9,15 @@
      {
          var length = entityMetadataCollection.length;
          for (var i = 0; i < length; i++)
-         //for (var i = 0; i < 5; i++)
          {
              var entity = entityMetadataCollection[i];
              console.log(entity.SchemaName + " AND " + entity.LogicalName + " AND " + entity.PrimaryIdAttribute, entity);
 
+             //Show-stopper block
              (function (entityName, primaryId)
              {
                  console.log(entityName, primaryId);
-                 ns.temp(entityName, primaryId);
+                 D365KB.temp(entityName, primaryId);
              })(entity.SchemaName, entity.PrimaryIdAttribute)
          }
      },
@@ -26,7 +26,7 @@
          console.log("Error while Retriving Entity Metadata.");
      });
 
-    var ns = {
+    var D365KB = {
         temp: function (entityName, primaryId)
         {
             var tempArray = [];

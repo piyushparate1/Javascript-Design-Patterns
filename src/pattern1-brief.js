@@ -1,5 +1,5 @@
 ﻿D365KB = window.D365KB || {};
-D365KB.StaticClassPattern = D365KB.StaticClassPattern || {};
+D365KB.SampleClass1 = D365KB.SampleClass1 || {};
 (function ()
 {
     this.fun = function (abc)
@@ -12,11 +12,12 @@ D365KB.StaticClassPattern = D365KB.StaticClassPattern || {};
     {
         alert("i m private" + a);
     };
-}).call(D365KB.StaticClassPattern);
+}).call(D365KB.SampleClass1);
+
 
 D365KB = window.D365KB || {};
-D365KB.classPattern = D365KB.classPattern || {};
-D365KB.classPattern = (function (obj)
+D365KB.SampleClass2 = D365KB.SampleClass2 || {};
+D365KB.SampleClass2 = (function (obj)
 {
     this.fun = function ()
     {
